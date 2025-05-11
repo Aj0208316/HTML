@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Formulario Básico</h1>
+  <form action="/procesar.php" method="post">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Digite su nombre" title="Escriba su nombre completo"
+      required><br><br>
+
+    <label for="correo">Correo Electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="Digite su correo electrónico"
+      title="Introduzca un correo válido" required><br><br>
+
+    <label for="contraseña">Contraseña</label>
+    <input type="password" id="contraseña" name="contraseña" placeholder="Digite su contraseña"
+      title="Debe tener entre 8 y 12 caracteres, una mayúscula, un número y un símbolo"
+      pattern="(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,12}" required><br><br>
+
+    <p><strong>Género</strong></p>
+    <label for="masculino"><input id="masculino" type="radio" name="genero" value="masculino"> Masculino</label>
+    <label for="femenino"><input id="femenino" type="radio" name="genero" value="femenino"> Femenino</label><br><br>
+
+    <p><strong>Intereses</strong></p>
+    <label><input type="checkbox" name="intereses" value="tecnologia" title="Tecnología"> Tecnología</label><br>
+    <label><input type="checkbox" name="intereses" value="deportes" title="Deportes"> Deportes</label><br>
+    <label><input type="checkbox" name="intereses" value="musica" title="Música"> Música</label><br><br>
+
+    <label for="pais">País</label>
+    <select id="pais" name="pais" title="Seleccione su país" required>
+      <option value="" disabled selected>Seleccione un país</option>
+      <option value="colombia">Colombia</option>
+      <option value="mexico">México</option>
+      <option value="españa">España</option>
+    </select><br><br>
+
+    <label for="comentario">Comentario</label><br>
+    <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" title="Ingrese su comentario"
+      required maxlength="500"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>

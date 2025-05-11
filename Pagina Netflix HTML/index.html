@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoxView</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="imagenes/descargas.jfif">
+</head>
+
+<body class="bg-dark text-white">
+
+  <div class="container py-5 text-center">
+    <div class="logo-wrapper mb-4">
+      <img src="imagenes/fondo.png" alt="FoxView Logo" class="logo-img">
+    </div>
+    <h1 class="mb-3">Bienvenido a FoxView</h1>
+    <header class="header-top">
+      <div class="corner-controls">
+        <select id="idioma" name="Idioma" required>
+          <option value="">Idioma</option>
+          <option value="espanol">Español</option>
+          <option value="ingles">Inglés</option>
+        </select>
+        <button type="button">Iniciar Sesión</button>
+      </div>
+    </header>
+  </div>
+
+  <section class="text-center bg-black py-5">
+    <h2 class="mb-3">Películas y series ilimitadas y mucho más</h2>
+    <p class="lead">A partir de $18.900. Cancela cuando quieras.</p>
+    <p>¿Quieres ver FoxView ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía.</p>
+    <form action="/procesar.php" method="post" class="d-flex justify-content-center gap-2 mt-3 flex-wrap px-3">
+      <input type="email" id="correo" name="correo" placeholder="Email" required class="form-control w-auto">
+      <button class="btn btn-danger">Comenzar &gt;</button>
+    </form>
+  </section>
+
+  <section class="galeria mt-5 px-4">
+    <h2 class="text-center mb-4">Películas en Tendencia</h2>
+    <div class="scroll-container">
+      <img src="https://m.media-amazon.com/images/M/MV5BZmM4YWNmYzYtZjFmZS00MTQ5LWExZWEtNWEzYjY4NTBmZWUzXkEyXkFqcGc@._V1_.jpg" alt="1">
+      <img src="https://i.pinimg.com/736x/06/19/c4/0619c4a27e262b3514c79c990f6dbcde.jpg" alt="2">
+      <img src="https://i.pinimg.com/736x/d6/6e/af/d66eaf36ae62c4cf1e48f2282ebdaf71.jpg" alt="3">
+      <img src="https://www.quepelivemoshoy.com/wp-content/uploads/2020/11/poster-los-vengadores.jpg" alt="4">
+      <img src="https://i.pinimg.com/originals/27/f0/43/27f0435a856f72d444f8dec35e1f310b.jpg" alt="5">
+      <img src="https://pm1.aminoapps.com/6292/bba6fe8ddab63afcdf80b5dfc59f77ff5d44d5a9_hq.jpg" alt="6">
+      <img src="https://static.wikia.nocookie.net/wiki-doblaje-espana/images/d/da/Venom-portada.jpg/revision/latest?cb=20230302172222&path-prefix=es" alt="7">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbWa4CeI-WK7Z7_zbo5dVReDJeGjdRovCbHA&s" alt="8">
+      <img src="https://es.web.img3.acsta.net/r_1280_720/img/03/4f/034f680ce275370ba66455bfb78caba0.jpg" alt="9">
+      <img src="https://www.todocuadros.es/cdn/shop/files/poster-matrix.jpg" alt="10">
+    </div>
+  </section>
+
+  <section class="faq-section py-5 px-4 bg-black">
+    <div class="container">
+      <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              ¿Qué es FoxView?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              FoxView es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet. Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              ¿Cuánto cuesta FoxView?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Desde $18.900 al mes. Sin cargos adicionales y sin contratos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              ¿Dónde puedo ver FoxView?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Puedes ver FoxView en smartphones, tablets, smart TVs, laptops o cualquier dispositivo con navegador web.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              ¿Cómo cancelo?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Puedes cancelar en cualquier momento desde tu perfil sin penalizaciones.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mt-5 bg-dark border-top border-secondary">
+    <p>© 2025 FoxView. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
